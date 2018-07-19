@@ -20,9 +20,9 @@
 
 <body>
      <header>
-         <div class="container-fluid">
+         <div class="nav-header">
              <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                 <a class="navbar-brand" href="#">Navbar</a>
+                 <a class="navbar-brand" href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i> UiLab</a>
                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                      <span class="navbar-toggler-icon"></span>
                  </button>
@@ -91,7 +91,7 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active position-relative">
-                        <img class="d-block w-100" src="images/1.jpg" alt="First slide">
+                        <img class="d-block w-100 img-fluid" src="images/1.jpg" alt="First slide">
                         <div class="text-white item-content text-center w-100">
                             <h3>SALE FASHION STORE</h3>
                             <p>Get Discount</p>
@@ -99,7 +99,7 @@
                         </div>
                     </div>
                     <div class="carousel-item position-relative">
-                        <img class="d-block w-100" src="images/2.jpg" alt="Second slide">
+                        <img class="d-block w-100 img-fluid" src="images/2.jpg" alt="Second slide">
                         <div class="text-white item-content text-center w-100">
                             <h3>SALE FASHION STORE</h3>
                             <p>Get Discount</p>
@@ -107,7 +107,7 @@
                         </div>
                     </div>
                     <div class="carousel-item position-relative">
-                        <img class="d-block w-100" src="images/3.jpg" alt="Third slide">
+                        <img class="d-block w-100 img-fluid" src="images/3.jpg" alt="Third slide">
                         <div class="text-white item-content text-center w-100">
                             <h3>SALE FASHION STORE</h3>
                             <p>Get Discount</p>
@@ -134,7 +134,9 @@
                  <div class="row card-container">
                      <div class="col-6 col-md-3 py-3 items">
                          <div class="card">
-                             <img class="card-img-top" src="images/pro1.jpg" alt="Card image cap">
+                             <a href="" data-toggle="modal" data-target="#lightbox">
+                                <img class="card-img-top" src="images/pro1.jpg" alt="Card image cap">
+                             </a>
                              <div class="card-body">
                                  <h5 class="card-title">Card title</h5>
                                  <div class="star-rating">
@@ -152,7 +154,9 @@
                      </div>
                      <div class="col-6 col-md-3 py-3 items">
                          <div class="card">
-                             <img class="card-img-top" src="images/pro2.jpg" alt="Card image cap">
+                             <a href="" data-toggle="modal" data-target="#lightbox">
+                                <img class="card-img-top" src="images/pro2.jpg" alt="Card image cap">
+                             </a>
                              <div class="card-body">
                                  <h5 class="card-title">Card title</h5>
                                  <div class="star-rating">
@@ -170,7 +174,9 @@
                      </div>
                      <div class="col-6 col-md-3 py-3 items">
                          <div class="card">
-                             <img class="card-img-top" src="images/pro3.jpg" alt="Card image cap">
+                             <a href="" data-toggle="modal" data-target="#lightbox">
+                                <img class="card-img-top" src="images/pro3.jpg" alt="Card image cap">
+                             </a>
                              <div class="card-body">
                                  <h5 class="card-title">Card title</h5>
                                  <div class="star-rating">
@@ -188,7 +194,9 @@
                      </div>
                      <div class="col-6 col-md-3 py-3 items">
                          <div class="card">
-                             <img class="card-img-top" src="images/pro4.jpg" alt="Card image cap">
+                             <a href="" data-toggle="modal" data-target="#lightbox">
+                                <img class="card-img-top" src="images/pro4.jpg" alt="Card image cap">
+                             </a>
                              <div class="card-body">
                                  <h5 class="card-title">Card title</h5>
                                  <div class="star-rating">
@@ -206,7 +214,9 @@
                      </div>
                      <div class="col-6 col-md-3 py-3 items">
                          <div class="card">
-                             <img class="card-img-top" src="images/pro5.jpg" alt="Card image cap">
+                             <a href="" data-toggle="modal" data-target="#lightbox">
+                                <img class="card-img-top" src="images/pro5.jpg" alt="Card image cap">
+                             </a>
                              <div class="card-body">
                                  <h5 class="card-title">Card title</h5>
                                  <div class="star-rating">
@@ -224,7 +234,9 @@
                      </div>
                      <div class="col-6 col-md-3 py-3 items">
                          <div class="card">
-                             <img class="card-img-top" src="images/pro6.jpg" alt="Card image cap">
+                             <a href="" data-toggle="modal" data-target="#lightbox">
+                                <img class="card-img-top" src="images/pro6.jpg" alt="Card image cap">
+                             </a>
                              <div class="card-body">
                                  <h5 class="card-title">Card title</h5>
                                  <div class="star-rating">
@@ -251,6 +263,33 @@
                      <li class="page-item mx-2"><a class="page-link" href="#">Last</a></li>
                  </ul>
              </nav>
+         </div>
+         <div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+             <div class="modal-dialog w-100 pr-4" >
+                 <button type="button" class="close hidden" data-dismiss="modal" aria-hidden="true">×</button>
+                 <div class="modal-content">
+                     <div class="modal-body">
+                         <div class="card">
+                             <a href="" data-toggle="modal" data-target="#lightbox">
+                                 <img class="img-fluid w-100" src="" alt="" />
+                             </a>
+                             <div class="card-body">
+                                 <h5 class="card-title">Card title</h5>
+                                 <div class="star-rating">
+                                     <span class="fa fa-star-o" data-rating="1"></span>
+                                     <span class="fa fa-star-o" data-rating="2"></span>
+                                     <span class="fa fa-star-o" data-rating="3"></span>
+                                     <span class="fa fa-star-o" data-rating="4"></span>
+                                     <span class="fa fa-star-o" data-rating="5"></span>
+                                     <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+                                 </div>
+                                 <p><b>$34</b></p>
+                                 <button class="btn btn-primary">Add to cart</button>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
          </div>
      </main>
      <footer class="bg-black text-center">
@@ -293,5 +332,32 @@
             }
         }
     })
+</script>
+<script>
+    $(document).ready(function() {
+        var $lightbox = $('#lightbox');
+
+        $('[data-target="#lightbox"]').on('click', function(event) {
+            var $img = $(this).find('img'),
+                src = $img.attr('src'),
+                alt = $img.attr('alt'),
+                css = {
+                    'maxWidth': $(window).width() - 100,
+                    'maxHeight': $(window).height() - 100
+                };
+
+            $lightbox.find('.close').addClass('hidden');
+            $lightbox.find('img').attr('src', src);
+            $lightbox.find('img').attr('alt', alt);
+            $lightbox.find('img').css(css);
+        });
+
+        $lightbox.on('shown.bs.modal', function (e) {
+            var $img = $lightbox.find('img');
+
+            $lightbox.find('.modal-dialog').css({'width': $img.width()});
+            $lightbox.find('.close').removeClass('hidden');
+        });
+    });
 </script>
 </html>
